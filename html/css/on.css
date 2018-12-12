@@ -121,7 +121,7 @@ body {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    margin: 16px auto;
+    margin: -50px auto;
     margin-left: -10px;
     margin-bottom: -10px;
 }
@@ -256,7 +256,7 @@ body {
 .form-top{
     overflow: hidden;
     padding: 0 25px 15px;
-    background: #ffa;
+    background: #d9edf7;
     -moz-border-radius: 4px 4px 0 0;
     -webkit-border-radius: 4px 4px 0 0;
     border-radius: 4px 4px 0 0;

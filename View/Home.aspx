@@ -1,8 +1,7 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="View.Home" %>
-
 <!DOCTYPE html>
-
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
@@ -12,17 +11,7 @@
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <script src="js/bootstrap.min.js" type="text/javascript"></script>
     <script src="js/bootstrap.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $(".button1").click(function () {
-                $("#content").fadeOut();
-            });
-            $(".button2").click(function () {
-                $("#content").fadeIn();
-            });
-        });
-    </script>
-
+    
     <title>面向大学生基于软件工程思维协同开发系统</title>
     <style>
         .form_submit {
@@ -48,7 +37,6 @@
                     </div>
                     <h1 class="whiteBlockcontent-Title">软件开发协同系统</h1>
                     <div class="whiteBlockcontentform">
-                        <h2 class="whiteBlockcontentTitle">基于软件工程思维</h2>
 <!--
 	                     <section id="content">
 		                        <form action="">			                        <h1>会员登录</h1>
@@ -66,36 +54,34 @@
 	                        </section>
 -->
                        <div class="row">
-                            <div class="col-md-12" >
+                            <div class="col-md-16" >
                                 <div class="form-top">
                                     <div class="form-top-left">
-                                        <h3 class="text-center">Login to your site</h3>
+                                        <h3 class="text-center">用户登录</h3>
                                     </div>
-<!--
-                                    <div class="form-top-right">
-                                          your logo? 
-                                    </div>
--->
                                 </div>
                                 <div class="form-bottom">
-                                    <form role="form" action="#" method="post" class="login-form">
+                                    <form role="form" method="post" class="login-form" runat="server">
                                          <div class="form-group">
-                                             <label for="username"></label>
-                                             <input type="text" id="username" name="username" placeholder="Username..." class="form-control"/>
+                                             <div class="input-group">
+                                              <span class="input-group-addon"><span class="glyphicon glyphicon glyphicon-user" aria-hidden="true"></span></span>
+                                              <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1"/>
+                                            </div>                                           
                                         </div>
                                         <div class="form-group">
-                                            <label for="password"></label>
-                                                <input type="password" id="password" name="password" placeholder="Password..." class="form-control"/>
+                                            <div class="input-group">
+                                              <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span></span>
+                                              <input type="text" class="form-control" placeholder="password" aria-describedby="basic-addon2"/>
+                                            </div>
                                         </div>
-                                        <button type="submit" class="form-control btn btn-success">Sign in</button>
+                                        <button type="submit" class="form-control btn btn-success">登录
+                                             <span class="glyphicon glyphicon glyphicon-user" aria-hidden="true"></span>
+                                        </button>
                                     </form>
                                 </div>
                            </div>
                         </div>
-                    </div>
-                    
-                    
-                      
+                    </div>     
                     
                     
                 </div>
