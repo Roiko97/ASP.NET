@@ -30,9 +30,6 @@ namespace DAO
 		
     #region 可扩展性方法定义
     partial void OnCreated();
-    partial void Insertteams(teams instance);
-    partial void Updateteams(teams instance);
-    partial void Deleteteams(teams instance);
     partial void Insertusers(users instance);
     partial void Updateusers(users instance);
     partial void Deleteusers(users instance);
@@ -68,129 +65,11 @@ namespace DAO
 			OnCreated();
 		}
 		
-		public System.Data.Linq.Table<teams> teams
-		{
-			get
-			{
-				return this.GetTable<teams>();
-			}
-		}
-		
 		public System.Data.Linq.Table<users> users
 		{
 			get
 			{
 				return this.GetTable<users>();
-			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.teams")]
-	public partial class teams : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _id;
-		
-		private int _mark;
-		
-		private string _member;
-		
-    #region 可扩展性方法定义
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnidChanging(int value);
-    partial void OnidChanged();
-    partial void OnmarkChanging(int value);
-    partial void OnmarkChanged();
-    partial void OnmemberChanging(string value);
-    partial void OnmemberChanged();
-    #endregion
-		
-		public teams()
-		{
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int id
-		{
-			get
-			{
-				return this._id;
-			}
-			set
-			{
-				if ((this._id != value))
-				{
-					this.OnidChanging(value);
-					this.SendPropertyChanging();
-					this._id = value;
-					this.SendPropertyChanged("id");
-					this.OnidChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_mark", DbType="Int NOT NULL")]
-		public int mark
-		{
-			get
-			{
-				return this._mark;
-			}
-			set
-			{
-				if ((this._mark != value))
-				{
-					this.OnmarkChanging(value);
-					this.SendPropertyChanging();
-					this._mark = value;
-					this.SendPropertyChanged("mark");
-					this.OnmarkChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_member", DbType="VarChar(30)")]
-		public string member
-		{
-			get
-			{
-				return this._member;
-			}
-			set
-			{
-				if ((this._member != value))
-				{
-					this.OnmemberChanging(value);
-					this.SendPropertyChanging();
-					this._member = value;
-					this.SendPropertyChanged("member");
-					this.OnmemberChanged();
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
 		}
 	}
@@ -203,15 +82,15 @@ namespace DAO
 		
 		private int _id;
 		
-		private string _email;
+		private string _student_id;
 		
-		private string _name;
+		private string _student_name;
 		
 		private string _password;
 		
 		private string _avatar;
 		
-		private System.Nullable<int> _mark;
+		private string _mark;
 		
 		private System.Nullable<int> _states;
 		
@@ -223,15 +102,15 @@ namespace DAO
     partial void OnCreated();
     partial void OnidChanging(int value);
     partial void OnidChanged();
-    partial void OnemailChanging(string value);
-    partial void OnemailChanged();
-    partial void OnnameChanging(string value);
-    partial void OnnameChanged();
+    partial void Onstudent_idChanging(string value);
+    partial void Onstudent_idChanged();
+    partial void Onstudent_nameChanging(string value);
+    partial void Onstudent_nameChanged();
     partial void OnpasswordChanging(string value);
     partial void OnpasswordChanged();
     partial void OnavatarChanging(string value);
     partial void OnavatarChanged();
-    partial void OnmarkChanging(System.Nullable<int> value);
+    partial void OnmarkChanging(string value);
     partial void OnmarkChanged();
     partial void OnstatesChanging(System.Nullable<int> value);
     partial void OnstatesChanged();
@@ -264,47 +143,47 @@ namespace DAO
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_email", DbType="VarChar(30) NOT NULL", CanBeNull=false)]
-		public string email
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_student_id", DbType="VarChar(30) NOT NULL", CanBeNull=false)]
+		public string student_id
 		{
 			get
 			{
-				return this._email;
+				return this._student_id;
 			}
 			set
 			{
-				if ((this._email != value))
+				if ((this._student_id != value))
 				{
-					this.OnemailChanging(value);
+					this.Onstudent_idChanging(value);
 					this.SendPropertyChanging();
-					this._email = value;
-					this.SendPropertyChanged("email");
-					this.OnemailChanged();
+					this._student_id = value;
+					this.SendPropertyChanged("student_id");
+					this.Onstudent_idChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_name", DbType="VarChar(30) NOT NULL", CanBeNull=false)]
-		public string name
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_student_name", DbType="VarChar(20) NOT NULL", CanBeNull=false)]
+		public string student_name
 		{
 			get
 			{
-				return this._name;
+				return this._student_name;
 			}
 			set
 			{
-				if ((this._name != value))
+				if ((this._student_name != value))
 				{
-					this.OnnameChanging(value);
+					this.Onstudent_nameChanging(value);
 					this.SendPropertyChanging();
-					this._name = value;
-					this.SendPropertyChanged("name");
-					this.OnnameChanged();
+					this._student_name = value;
+					this.SendPropertyChanged("student_name");
+					this.Onstudent_nameChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_password", DbType="VarChar(21) NOT NULL", CanBeNull=false)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_password", DbType="VarChar(20) NOT NULL", CanBeNull=false)]
 		public string password
 		{
 			get
@@ -324,7 +203,7 @@ namespace DAO
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_avatar", DbType="VarChar(80)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_avatar", DbType="VarChar(200)")]
 		public string avatar
 		{
 			get
@@ -344,8 +223,8 @@ namespace DAO
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_mark", DbType="Int")]
-		public System.Nullable<int> mark
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_mark", DbType="VarChar(10) NOT NULL", CanBeNull=false)]
+		public string mark
 		{
 			get
 			{
@@ -384,7 +263,7 @@ namespace DAO
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_position", DbType="VarChar(20)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_position", DbType="VarChar(30)")]
 		public string position
 		{
 			get

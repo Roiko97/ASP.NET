@@ -22,7 +22,7 @@
         }
 
         .choose_btn {
-            margin-top: 2
+            margin-top: 2;
         }
     </style>
 </head>

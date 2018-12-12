@@ -2,16 +2,10 @@
 <ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Coordination">
   <DataContextMoniker Name="/CoordinationDataContext" />
   <nestedChildShapes>
-    <classShape Id="7e8cafe1-a826-4edf-8355-35ff53ff9e21" absoluteBounds="1, 2.5, 2, 1.3525109863281251">
-      <DataClassMoniker Name="/CoordinationDataContext/teams" />
-      <nestedChildShapes>
-        <elementListCompartment Id="ed9e4364-8560-4a73-8d24-23fe26b88e0a" absoluteBounds="1.0150000000000001, 2.96, 1.9700000000000002, 0.792510986328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <classShape Id="7415ee6a-47e2-4150-b720-7cce395c54de" absoluteBounds="3.75, 0.75, 2, 2.2764815266927085">
+    <classShape Id="d547fd23-063e-4bdb-8deb-5422f9e1c2cd" absoluteBounds="3.75, 2.375, 2, 2.2764815266927085">
       <DataClassMoniker Name="/CoordinationDataContext/users" />
       <nestedChildShapes>
-        <elementListCompartment Id="b6492cb8-c480-4395-8a0a-406a4d330eac" absoluteBounds="3.765, 1.21, 1.9700000000000002, 1.7164815266927085" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="8a095c8f-6f8d-4a66-bc15-1b9698e8c725" absoluteBounds="3.765, 2.835, 1.9700000000000002, 1.7164815266927085" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
   </nestedChildShapes>
