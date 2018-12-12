@@ -65,18 +65,18 @@
                                          <div class="form-group">
                                              <div class="input-group">
                                               <span class="input-group-addon"><span class="glyphicon glyphicon glyphicon-user" aria-hidden="true"></span></span>
-                                              <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1"/>
+                                              <input type="text" id="userName" class="form-control" placeholder="Username" aria-describedby="basic-addon1"/>
                                             </div>                                           
                                         </div>
                                         <div class="form-group">
                                             <div class="input-group">
                                               <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span></span>
-                                              <input type="text" class="form-control" placeholder="password" aria-describedby="basic-addon2"/>
+                                              <input type="text" id="userPaw" class="form-control" placeholder="password" aria-describedby="basic-addon2"/>
                                             </div>
                                         </div>
-                                        <button type="submit" class="form-control btn btn-success">登录
-                                             <span class="glyphicon glyphicon glyphicon-user" aria-hidden="true"></span>
-                                        </button>
+                                        <asp:Button runat="server" id="signIn" type="submit" class="form-control btn btn-success" Text="登录">
+                                         
+                                        </asp:Button>
                                     </form>
                                 </div>
                            </div>
