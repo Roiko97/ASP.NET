@@ -1,0 +1,6 @@
+C:\Users\jung\documents\visual studio 2013\Projects\面向大学生基于软件工程思维协同开发系统\View\bin\View.dll.config
+C:\Users\jung\documents\visual studio 2013\Projects\面向大学生基于软件工程思维协同开发系统\View\bin\View.dll
+C:\Users\jung\documents\visual studio 2013\Projects\面向大学生基于软件工程思维协同开发系统\View\bin\View.pdb
+C:\Users\jung\documents\visual studio 2013\Projects\面向大学生基于软件工程思维协同开发系统\View\obj\Debug\View.dll
+C:\Users\jung\documents\visual studio 2013\Projects\面向大学生基于软件工程思维协同开发系统\View\obj\Debug\View.pdb
+C:\Users\jung\documents\visual studio 2013\Projects\面向大学生基于软件工程思维协同开发系统\View\obj\Debug\View.csprojResolveAssemblyReference.cache
