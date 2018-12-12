@@ -39,6 +39,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -104,6 +105,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserSignInServlet.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Scripts\jquery-3.0.0.slim.min.map" />
@@ -125,14 +127,17 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DAO\DAO.csproj">
+      <Project>{4d0afab7-1bff-442e-ab9f-b792cc34e823}</Project>
+      <Name>DAO</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Model\Model.csproj">
       <Project>{1e07a76c-6a07-42eb-a91e-a27ecda23a61}</Project>
       <Name>Model</Name>
     </ProjectReference>
-    <ProjectReference Include="..\View\View.csproj">
-      <Project>{2beb8c90-70aa-4998-934a-009adf24d140}</Project>
-      <Name>View</Name>
-    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -7,7 +7,7 @@
       <Column Name="student_name" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
       <Column Name="password" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
       <Column Name="avatar" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="mark" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="mark" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
       <Column Name="states" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="position" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
     </Type>

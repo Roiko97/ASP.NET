@@ -65,16 +65,16 @@
                                          <div class="form-group">
                                              <div class="input-group">
                                               <span class="input-group-addon"><span class="glyphicon glyphicon glyphicon-user" aria-hidden="true"></span></span>
-                                              <input type="text" id="userName" class="form-control" placeholder="Username" aria-describedby="basic-addon1"/>
+                                              <input  runat="server" type="text" id="userName" class="form-control" placeholder="Username" aria-describedby="basic-addon1"/>
                                             </div>                                           
                                         </div>
                                         <div class="form-group">
                                             <div class="input-group">
                                               <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span></span>
-                                              <input type="text" id="userPaw" class="form-control" placeholder="password" aria-describedby="basic-addon2"/>
+                                              <input runat="server" type="text" id="userPaw" class="form-control" placeholder="password" aria-describedby="basic-addon2"/>
                                             </div>
                                         </div>
-                                        <asp:Button runat="server" id="signIn" type="submit" class="form-control btn btn-success" Text="登录">
+                                        <asp:Button runat="server" id="signIn" type="submit" class="form-control btn btn-success" Text="登录" OnClick="signIn_Click">
                                          
                                         </asp:Button>
                                     </form>

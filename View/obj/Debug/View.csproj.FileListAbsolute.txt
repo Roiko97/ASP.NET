@@ -1,12 +1,16 @@
-C:\Users\jung\documents\visual studio 2013\Projects\面向大学生基于软件工程思维协同开发系统\View\bin\View.dll.config
-C:\Users\jung\documents\visual studio 2013\Projects\面向大学生基于软件工程思维协同开发系统\View\bin\View.dll
-C:\Users\jung\documents\visual studio 2013\Projects\面向大学生基于软件工程思维协同开发系统\View\bin\View.pdb
-C:\Users\jung\documents\visual studio 2013\Projects\面向大学生基于软件工程思维协同开发系统\View\obj\Debug\View.dll
-C:\Users\jung\documents\visual studio 2013\Projects\面向大学生基于软件工程思维协同开发系统\View\obj\Debug\View.pdb
-C:\Users\jung\documents\visual studio 2013\Projects\面向大学生基于软件工程思维协同开发系统\View\obj\Debug\View.csprojResolveAssemblyReference.cache
 C:\Users\DELL\Desktop\ASP.NET\ASP.NET\View\bin\View.dll.config
 C:\Users\DELL\Desktop\ASP.NET\ASP.NET\View\bin\View.dll
 C:\Users\DELL\Desktop\ASP.NET\ASP.NET\View\bin\View.pdb
 C:\Users\DELL\Desktop\ASP.NET\ASP.NET\View\obj\Debug\View.csprojResolveAssemblyReference.cache
 C:\Users\DELL\Desktop\ASP.NET\ASP.NET\View\obj\Debug\View.dll
 C:\Users\DELL\Desktop\ASP.NET\ASP.NET\View\obj\Debug\View.pdb
+C:\Users\jung\Documents\Visual Studio 2013\Projects\面向大学生基于软件工程思维协同开发系统\View\bin\View.dll.config
+C:\Users\jung\Documents\Visual Studio 2013\Projects\面向大学生基于软件工程思维协同开发系统\View\bin\View.dll
+C:\Users\jung\Documents\Visual Studio 2013\Projects\面向大学生基于软件工程思维协同开发系统\View\bin\View.pdb
+C:\Users\jung\Documents\Visual Studio 2013\Projects\面向大学生基于软件工程思维协同开发系统\View\bin\Controller.dll
+C:\Users\jung\Documents\Visual Studio 2013\Projects\面向大学生基于软件工程思维协同开发系统\View\bin\DAO.dll
+C:\Users\jung\Documents\Visual Studio 2013\Projects\面向大学生基于软件工程思维协同开发系统\View\bin\Controller.pdb
+C:\Users\jung\Documents\Visual Studio 2013\Projects\面向大学生基于软件工程思维协同开发系统\View\bin\DAO.pdb
+C:\Users\jung\Documents\Visual Studio 2013\Projects\面向大学生基于软件工程思维协同开发系统\View\obj\Debug\View.csprojResolveAssemblyReference.cache
+C:\Users\jung\Documents\Visual Studio 2013\Projects\面向大学生基于软件工程思维协同开发系统\View\obj\Debug\View.dll
+C:\Users\jung\Documents\Visual Studio 2013\Projects\面向大学生基于软件工程思维协同开发系统\View\obj\Debug\View.pdb
