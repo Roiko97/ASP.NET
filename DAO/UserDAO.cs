@@ -21,5 +21,19 @@ namespace DAO
             else
                 return true;
         }
+        public bool userModifyPwd(string std_id, string std_pwd)
+        {
+            var result = db.users.Where(info => info.student_id == std_id).First();
+            if (result != null)
+            {
+                Console.Write("1");
+                result.password = std_pwd;
+                db.SubmitChanges();
+                return true;
+            }
+            Console.Write("2");
+            return false;
+
+        }
     }
 }

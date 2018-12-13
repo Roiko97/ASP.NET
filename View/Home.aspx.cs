@@ -30,16 +30,19 @@ namespace View
             {
                 Session["studentId"] = _userName;
                 Response.Write("<script>alert('success')</script>");
-
                 HttpCookie cookie = new HttpCookie("studentInfo");
                 cookie["studentId"] = _userName;
                 cookie.Expires = DateTime.Now.AddDays(1);
                 Response.Cookies.Add(cookie);
+                if (_userPaw == "123456")
+                {
+                    Response.Redirect("Exchange.aspx");
+                }
             }
             else
             {
-                Response.Write("<script>alert('fail')</script>");
-                Response.Redirect("Home.aspx");
+                Response.Write("<script>alert('账号或密码错误,请重新尝试')</script>");
+                userName.Value = userPaw.Value = "";
             }
         }
     }
