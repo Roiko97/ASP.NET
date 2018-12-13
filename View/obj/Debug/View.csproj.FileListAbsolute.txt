@@ -14,3 +14,5 @@ C:\Users\jung\Documents\Visual Studio 2013\Projects\面向大学生基于软件�
 C:\Users\jung\Documents\Visual Studio 2013\Projects\面向大学生基于软件工程思维协同开发系统\View\obj\Debug\View.csprojResolveAssemblyReference.cache
 C:\Users\jung\Documents\Visual Studio 2013\Projects\面向大学生基于软件工程思维协同开发系统\View\obj\Debug\View.dll
 C:\Users\jung\Documents\Visual Studio 2013\Projects\面向大学生基于软件工程思维协同开发系统\View\obj\Debug\View.pdb
+C:\Users\jung\Documents\Visual Studio 2013\Projects\面向大学生基于软件工程思维协同开发系统\View\bin\Model.dll
+C:\Users\jung\Documents\Visual Studio 2013\Projects\面向大学生基于软件工程思维协同开发系统\View\bin\Model.pdb

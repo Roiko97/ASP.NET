@@ -25,7 +25,7 @@ namespace Model
             long num2 = DateTime.Now.Ticks + this.tmp;
             this.tmp++;
             Random random = new Random(((int)(((ulong)num2) & 0xffffffffL)) | ((int)(num2 >> this.tmp)));
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < 9; i++)
             {
                 char ch;
                 int num = random.Next();

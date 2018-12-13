@@ -38,5 +38,13 @@ namespace View
                 Response.Redirect("Exchange.aspx");
             }
         }
+        
+        /**/
+        protected void cteBtn_Click(object sender, EventArgs e)
+        {
+            CreateTeamMark ctm = new CreateTeamMark();
+            //获取到mark值
+            string mark = ctm.getMark();
+        }
     }
 }

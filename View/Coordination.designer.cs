@@ -33,6 +33,9 @@ namespace View
     partial void Insertusers(users instance);
     partial void Updateusers(users instance);
     partial void Deleteusers(users instance);
+    partial void Insertteam(team instance);
+    partial void Updateteam(team instance);
+    partial void Deleteteam(team instance);
     #endregion
 		
 		public CoordinationDataContext() : 
@@ -70,6 +73,14 @@ namespace View
 			get
 			{
 				return this.GetTable<users>();
+			}
+		}
+		
+		public System.Data.Linq.Table<team> team
+		{
+			get
+			{
+				return this.GetTable<team>();
 			}
 		}
 	}
@@ -279,6 +290,116 @@ namespace View
 					this._position = value;
 					this.SendPropertyChanged("position");
 					this.OnpositionChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.team")]
+	public partial class team : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _id;
+		
+		private string _mark;
+		
+		private string _heading;
+		
+    #region 可扩展性方法定义
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnidChanging(int value);
+    partial void OnidChanged();
+    partial void OnmarkChanging(string value);
+    partial void OnmarkChanged();
+    partial void OnheadingChanging(string value);
+    partial void OnheadingChanged();
+    #endregion
+		
+		public team()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int id
+		{
+			get
+			{
+				return this._id;
+			}
+			set
+			{
+				if ((this._id != value))
+				{
+					this.OnidChanging(value);
+					this.SendPropertyChanging();
+					this._id = value;
+					this.SendPropertyChanged("id");
+					this.OnidChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_mark", DbType="VarChar(10) NOT NULL", CanBeNull=false)]
+		public string mark
+		{
+			get
+			{
+				return this._mark;
+			}
+			set
+			{
+				if ((this._mark != value))
+				{
+					this.OnmarkChanging(value);
+					this.SendPropertyChanging();
+					this._mark = value;
+					this.SendPropertyChanged("mark");
+					this.OnmarkChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_heading", DbType="VarChar(30)")]
+		public string heading
+		{
+			get
+			{
+				return this._heading;
+			}
+			set
+			{
+				if ((this._heading != value))
+				{
+					this.OnheadingChanging(value);
+					this.SendPropertyChanging();
+					this._heading = value;
+					this.SendPropertyChanged("heading");
+					this.OnheadingChanged();
 				}
 			}
 		}
