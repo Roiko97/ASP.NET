@@ -30,12 +30,21 @@ namespace DAO
 		
     #region 可扩展性方法定义
     partial void OnCreated();
+    partial void Insertcooperation(cooperation instance);
+    partial void Updatecooperation(cooperation instance);
+    partial void Deletecooperation(cooperation instance);
     partial void Insertusers(users instance);
     partial void Updateusers(users instance);
     partial void Deleteusers(users instance);
+    partial void Insertdemand(demand instance);
+    partial void Updatedemand(demand instance);
+    partial void Deletedemand(demand instance);
     partial void Insertteam(team instance);
     partial void Updateteam(team instance);
     partial void Deleteteam(team instance);
+    partial void Inserttestform(testform instance);
+    partial void Updatetestform(testform instance);
+    partial void Deletetestform(testform instance);
     #endregion
 		
 		public CoordinationDataContext() : 
@@ -68,6 +77,14 @@ namespace DAO
 			OnCreated();
 		}
 		
+		public System.Data.Linq.Table<cooperation> cooperation
+		{
+			get
+			{
+				return this.GetTable<cooperation>();
+			}
+		}
+		
 		public System.Data.Linq.Table<users> users
 		{
 			get
@@ -76,11 +93,185 @@ namespace DAO
 			}
 		}
 		
+		public System.Data.Linq.Table<demand> demand
+		{
+			get
+			{
+				return this.GetTable<demand>();
+			}
+		}
+		
 		public System.Data.Linq.Table<team> team
 		{
 			get
 			{
 				return this.GetTable<team>();
+			}
+		}
+		
+		public System.Data.Linq.Table<testform> testform
+		{
+			get
+			{
+				return this.GetTable<testform>();
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.cooperation")]
+	public partial class cooperation : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _id;
+		
+		private string _mark;
+		
+		private string _data;
+		
+		private string _announcer;
+		
+		private System.Nullable<System.DateTime> _releasetime;
+		
+    #region 可扩展性方法定义
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnidChanging(int value);
+    partial void OnidChanged();
+    partial void OnmarkChanging(string value);
+    partial void OnmarkChanged();
+    partial void OndataChanging(string value);
+    partial void OndataChanged();
+    partial void OnannouncerChanging(string value);
+    partial void OnannouncerChanged();
+    partial void OnreleasetimeChanging(System.Nullable<System.DateTime> value);
+    partial void OnreleasetimeChanged();
+    #endregion
+		
+		public cooperation()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int id
+		{
+			get
+			{
+				return this._id;
+			}
+			set
+			{
+				if ((this._id != value))
+				{
+					this.OnidChanging(value);
+					this.SendPropertyChanging();
+					this._id = value;
+					this.SendPropertyChanged("id");
+					this.OnidChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_mark", DbType="VarChar(10) NOT NULL", CanBeNull=false)]
+		public string mark
+		{
+			get
+			{
+				return this._mark;
+			}
+			set
+			{
+				if ((this._mark != value))
+				{
+					this.OnmarkChanging(value);
+					this.SendPropertyChanging();
+					this._mark = value;
+					this.SendPropertyChanged("mark");
+					this.OnmarkChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_data", DbType="VarChar(MAX)")]
+		public string data
+		{
+			get
+			{
+				return this._data;
+			}
+			set
+			{
+				if ((this._data != value))
+				{
+					this.OndataChanging(value);
+					this.SendPropertyChanging();
+					this._data = value;
+					this.SendPropertyChanged("data");
+					this.OndataChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_announcer", DbType="VarChar(20) NOT NULL", CanBeNull=false)]
+		public string announcer
+		{
+			get
+			{
+				return this._announcer;
+			}
+			set
+			{
+				if ((this._announcer != value))
+				{
+					this.OnannouncerChanging(value);
+					this.SendPropertyChanging();
+					this._announcer = value;
+					this.SendPropertyChanged("announcer");
+					this.OnannouncerChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_releasetime", DbType="DateTime")]
+		public System.Nullable<System.DateTime> releasetime
+		{
+			get
+			{
+				return this._releasetime;
+			}
+			set
+			{
+				if ((this._releasetime != value))
+				{
+					this.OnreleasetimeChanging(value);
+					this.SendPropertyChanging();
+					this._releasetime = value;
+					this.SendPropertyChanged("releasetime");
+					this.OnreleasetimeChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
 		}
 	}
@@ -315,6 +506,116 @@ namespace DAO
 		}
 	}
 	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.demand")]
+	public partial class demand : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _id;
+		
+		private string _mark;
+		
+		private string _data;
+		
+    #region 可扩展性方法定义
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnidChanging(int value);
+    partial void OnidChanged();
+    partial void OnmarkChanging(string value);
+    partial void OnmarkChanged();
+    partial void OndataChanging(string value);
+    partial void OndataChanged();
+    #endregion
+		
+		public demand()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int id
+		{
+			get
+			{
+				return this._id;
+			}
+			set
+			{
+				if ((this._id != value))
+				{
+					this.OnidChanging(value);
+					this.SendPropertyChanging();
+					this._id = value;
+					this.SendPropertyChanged("id");
+					this.OnidChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_mark", DbType="VarChar(10) NOT NULL", CanBeNull=false)]
+		public string mark
+		{
+			get
+			{
+				return this._mark;
+			}
+			set
+			{
+				if ((this._mark != value))
+				{
+					this.OnmarkChanging(value);
+					this.SendPropertyChanging();
+					this._mark = value;
+					this.SendPropertyChanged("mark");
+					this.OnmarkChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_data", DbType="VarChar(MAX)")]
+		public string data
+		{
+			get
+			{
+				return this._data;
+			}
+			set
+			{
+				if ((this._data != value))
+				{
+					this.OndataChanging(value);
+					this.SendPropertyChanging();
+					this._data = value;
+					this.SendPropertyChanged("data");
+					this.OndataChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.team")]
 	public partial class team : INotifyPropertyChanging, INotifyPropertyChanged
 	{
@@ -327,6 +628,8 @@ namespace DAO
 		
 		private string _heading;
 		
+		private System.Nullable<int> _schedule;
+		
     #region 可扩展性方法定义
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -337,6 +640,8 @@ namespace DAO
     partial void OnmarkChanged();
     partial void OnheadingChanging(string value);
     partial void OnheadingChanged();
+    partial void OnscheduleChanging(System.Nullable<int> value);
+    partial void OnscheduleChanged();
     #endregion
 		
 		public team()
@@ -400,6 +705,160 @@ namespace DAO
 					this._heading = value;
 					this.SendPropertyChanged("heading");
 					this.OnheadingChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_schedule", DbType="Int")]
+		public System.Nullable<int> schedule
+		{
+			get
+			{
+				return this._schedule;
+			}
+			set
+			{
+				if ((this._schedule != value))
+				{
+					this.OnscheduleChanging(value);
+					this.SendPropertyChanging();
+					this._schedule = value;
+					this.SendPropertyChanged("schedule");
+					this.OnscheduleChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.testform")]
+	public partial class testform : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _id;
+		
+		private string _mark;
+		
+		private string _field;
+		
+		private int _complete;
+		
+    #region 可扩展性方法定义
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnidChanging(int value);
+    partial void OnidChanged();
+    partial void OnmarkChanging(string value);
+    partial void OnmarkChanged();
+    partial void OnfieldChanging(string value);
+    partial void OnfieldChanged();
+    partial void OncompleteChanging(int value);
+    partial void OncompleteChanged();
+    #endregion
+		
+		public testform()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int id
+		{
+			get
+			{
+				return this._id;
+			}
+			set
+			{
+				if ((this._id != value))
+				{
+					this.OnidChanging(value);
+					this.SendPropertyChanging();
+					this._id = value;
+					this.SendPropertyChanged("id");
+					this.OnidChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_mark", DbType="VarChar(10) NOT NULL", CanBeNull=false)]
+		public string mark
+		{
+			get
+			{
+				return this._mark;
+			}
+			set
+			{
+				if ((this._mark != value))
+				{
+					this.OnmarkChanging(value);
+					this.SendPropertyChanging();
+					this._mark = value;
+					this.SendPropertyChanged("mark");
+					this.OnmarkChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_field", DbType="VarChar(MAX) NOT NULL", CanBeNull=false)]
+		public string field
+		{
+			get
+			{
+				return this._field;
+			}
+			set
+			{
+				if ((this._field != value))
+				{
+					this.OnfieldChanging(value);
+					this.SendPropertyChanging();
+					this._field = value;
+					this.SendPropertyChanged("field");
+					this.OnfieldChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_complete", DbType="Int NOT NULL")]
+		public int complete
+		{
+			get
+			{
+				return this._complete;
+			}
+			set
+			{
+				if ((this._complete != value))
+				{
+					this.OncompleteChanging(value);
+					this.SendPropertyChanging();
+					this._complete = value;
+					this.SendPropertyChanged("complete");
+					this.OncompleteChanged();
 				}
 			}
 		}

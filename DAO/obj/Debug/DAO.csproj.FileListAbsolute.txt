@@ -3,3 +3,4 @@ C:\Users\jung\Documents\Visual Studio 2013\Projects\面向大学生基于软件�
 C:\Users\jung\Documents\Visual Studio 2013\Projects\面向大学生基于软件工程思维协同开发系统\DAO\bin\DAO.pdb
 C:\Users\jung\Documents\Visual Studio 2013\Projects\面向大学生基于软件工程思维协同开发系统\DAO\obj\Debug\DAO.dll
 C:\Users\jung\Documents\Visual Studio 2013\Projects\面向大学生基于软件工程思维协同开发系统\DAO\obj\Debug\DAO.pdb
+C:\Users\jung\Documents\Visual Studio 2013\Projects\面向大学生基于软件工程思维协同开发系统\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache

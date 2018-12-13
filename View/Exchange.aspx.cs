@@ -42,7 +42,7 @@ namespace View
         /**/
         protected void cteBtn_Click(object sender, EventArgs e)
         {
-            CreateTeamMark ctm = new CreateTeamMark();
+            TeamOperatingServlet ctm = new TeamOperatingServlet();
             //获取到mark值
             string mark = ctm.getMark();
         }
