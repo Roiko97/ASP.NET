@@ -38,6 +38,11 @@ namespace View
                 {
                     Response.Redirect("Exchange.aspx");
                 }
+                else
+                {
+                    // 如果密码安全
+                    Response.Redirect("Summarize.aspx");
+                }
             }
             else
             {

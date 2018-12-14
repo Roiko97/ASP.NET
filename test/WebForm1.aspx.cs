@@ -24,7 +24,12 @@ namespace test
             result.data = this.txtEditorContents.Text;
             db.csByTextBox.InsertOnSubmit(result);
             db.SubmitChanges();
-            Response.Redirect("WebForm2.aspx");
+            Response.Redirect("WebForm4.aspx");
+        }
+
+        protected void txtEditorContents_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

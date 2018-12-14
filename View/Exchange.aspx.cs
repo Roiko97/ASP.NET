@@ -27,6 +27,7 @@ namespace View
          */
         protected void ecBtn_Click(object sender, EventArgs e)
         {
+            
             UserSignInServlet userSignInservlet = UserSignInServlet.getUserSignInservletInstance();
             bool isTrue = userSignInservlet.userModifyPwd(student_id, recipient_name.Value);
             if (isTrue)

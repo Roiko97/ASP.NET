@@ -1,6 +1,8 @@
 C:\Users\jung\Documents\Visual Studio 2013\Projects\面向大学生基于软件工程思维协同开发系统\Model\bin\Model.dll.config
 C:\Users\jung\Documents\Visual Studio 2013\Projects\面向大学生基于软件工程思维协同开发系统\Model\bin\Model.dll
 C:\Users\jung\Documents\Visual Studio 2013\Projects\面向大学生基于软件工程思维协同开发系统\Model\bin\Model.pdb
+C:\Users\jung\Documents\Visual Studio 2013\Projects\面向大学生基于软件工程思维协同开发系统\Model\bin\Newtonsoft.Json.dll
+C:\Users\jung\Documents\Visual Studio 2013\Projects\面向大学生基于软件工程思维协同开发系统\Model\bin\Newtonsoft.Json.xml
+C:\Users\jung\Documents\Visual Studio 2013\Projects\面向大学生基于软件工程思维协同开发系统\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
 C:\Users\jung\Documents\Visual Studio 2013\Projects\面向大学生基于软件工程思维协同开发系统\Model\obj\Debug\Model.dll
 C:\Users\jung\Documents\Visual Studio 2013\Projects\面向大学生基于软件工程思维协同开发系统\Model\obj\Debug\Model.pdb
-C:\Users\jung\Documents\Visual Studio 2013\Projects\面向大学生基于软件工程思维协同开发系统\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache

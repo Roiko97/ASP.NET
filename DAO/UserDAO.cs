@@ -54,6 +54,20 @@ namespace DAO
             db.team.InsertOnSubmit(t);
             db.SubmitChanges();
         }
+        /*通过studentId 获得mark
+         成功返回mark
+         * 失败返回null
+         */
+        public string getMarkByStudentId(string stdId)
+        {
+            var result = db.users.Where(info => info.student_id == stdId).First();
+            if (result != null)
+            {
+                return result.mark;
+            }
+            return null;
+        }
+        
         /*修改用户的标记 By userId 成功返回true 失败返回false
           适用范围：部分组员的增加，部分组员的删除
          */
@@ -158,7 +172,7 @@ namespace DAO
          */
         public Object getDemandByMark(string mark)
         {
-            var result = db.demand.Where(info => info.mark == mark).First();
+            var result = db.demand.Where(info => info.mark == mark);
             return result;
         }
         /*

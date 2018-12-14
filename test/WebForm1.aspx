@@ -125,12 +125,12 @@
 </head>
 <body>
     <form id="form1" runat="server">
- <div>
-     <dt>文章内容：</dt>
-    <dd style="line-height: 0; width: 89%">
-         <asp:TextBox ID="txtEditorContents" name="txtEditorContents" runat="server" TextMode="MultiLine" Height="400px" Width="1000px" ClientIDMode="Static"> </asp:TextBox>
-     </dd>    
- </div>
+        <div>
+            <p>文章内容：</p>
+                <p style="line-height: 0; width: 89%">
+                <asp:TextBox ID="txtEditorContents" name="txtEditorContents" runat="server" TextMode="MultiLine" Height="400px" Width="1000px" ClientIDMode="Static" OnTextChanged="txtEditorContents_TextChanged"> </asp:TextBox>
+            </p>  
+        </div>
         <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
     </form>
 

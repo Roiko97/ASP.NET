@@ -29,5 +29,9 @@ namespace Controller
             else
                 return false;
         }
+        public string getMarkByStudentId(string studentId)
+        {
+            return userDao.getMarkByStudentId(studentId);
+        }
     }
 }

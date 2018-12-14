@@ -67,6 +67,9 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="packages.config" />
+    <Content Include="WebForm4.aspx" />
+    <Content Include="文章内容.aspx" />
+    <Content Include="需求分析.aspx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -99,6 +102,27 @@
     </Compile>
     <Compile Include="WebForm2.aspx.designer.cs">
       <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm4.aspx.cs">
+      <DependentUpon>WebForm4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm4.aspx.designer.cs">
+      <DependentUpon>WebForm4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="文章内容.aspx.cs">
+      <DependentUpon>文章内容.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="文章内容.aspx.designer.cs">
+      <DependentUpon>文章内容.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="需求分析.aspx.cs">
+      <DependentUpon>需求分析.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="需求分析.aspx.designer.cs">
+      <DependentUpon>需求分析.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

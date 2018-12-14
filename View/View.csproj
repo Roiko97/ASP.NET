@@ -72,6 +72,8 @@
     <Content Include="css\bootstrap.css" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\on.css" />
+    <Content Include="Demand.aspx" />
+    <Content Include="Document.aspx" />
     <Content Include="Exchange.aspx" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -109,6 +111,7 @@
       <LastGenOutput>Coordination.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="UpdateCdt.aspx" />
     <None Include="Scripts\jquery-3.0.0.intellisense.js" />
     <Content Include="Scripts\index.d.ts" />
     <Content Include="Scripts\jquery-3.0.0.js" />
@@ -124,6 +127,7 @@
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
     <Content Include="src\LOGO1.gif" />
+    <Content Include="Summarize.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -131,6 +135,20 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Coordination.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Demand.aspx.cs">
+      <DependentUpon>Demand.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demand.aspx.designer.cs">
+      <DependentUpon>Demand.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Document.aspx.cs">
+      <DependentUpon>Document.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Document.aspx.designer.cs">
+      <DependentUpon>Document.aspx</DependentUpon>
     </Compile>
     <Compile Include="Exchange.aspx.cs">
       <DependentUpon>Exchange.aspx</DependentUpon>
@@ -150,6 +168,20 @@
       <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Summarize.aspx.cs">
+      <DependentUpon>Summarize.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Summarize.aspx.designer.cs">
+      <DependentUpon>Summarize.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateCdt.aspx.cs">
+      <DependentUpon>UpdateCdt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdateCdt.aspx.designer.cs">
+      <DependentUpon>UpdateCdt.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\fontawesome-webfont.eot" />
