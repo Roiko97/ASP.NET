@@ -112,6 +112,8 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="UpdateCdt.aspx" />
+    <Content Include="TeamManagement.aspx" />
+    <Content Include="TestUnit.aspx" />
     <None Include="Scripts\jquery-3.0.0.intellisense.js" />
     <Content Include="Scripts\index.d.ts" />
     <Content Include="Scripts\jquery-3.0.0.js" />
@@ -181,6 +183,20 @@
     </Compile>
     <Compile Include="UpdateCdt.aspx.designer.cs">
       <DependentUpon>UpdateCdt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TeamManagement.aspx.cs">
+      <DependentUpon>TeamManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TeamManagement.aspx.designer.cs">
+      <DependentUpon>TeamManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TestUnit.aspx.cs">
+      <DependentUpon>TestUnit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestUnit.aspx.designer.cs">
+      <DependentUpon>TestUnit.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
