@@ -10,7 +10,7 @@
 namespace test {
     
     
-    public partial class TestUnit {
+    public partial class WebForm5 {
         
         /// <summary>
         /// form1 控件。
@@ -31,12 +31,12 @@ namespace test {
         protected global::System.Web.UI.WebControls.GridView GridView1;
         
         /// <summary>
-        /// TUnit 控件。
+        /// LinqDataSource1 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinqDataSource TUnit;
+        protected global::System.Web.UI.WebControls.LinqDataSource LinqDataSource1;
     }
 }

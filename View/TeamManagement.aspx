@@ -394,22 +394,69 @@
                             </ul>
                             <div class="tab-content">
                                 <div id="tab-1" class="tab-pane active">
-                                    <div class="slimScrollDiv" style="position: relative; width: auto; height: 100%;"><div class="full-height-scroll" style="width: auto; height: 100%;">
+                                    <div class="slimScrollDiv" style="position: relative; width: auto; height: auto;">
+                                        <div class="full-height-scroll" style="width: auto; height: auto;">
                                         <div class="table-responsive">
-                                            <asp:GridView ID="GridView1" class="table-responsive table table-striped table-hover" runat="server" AutoGenerateColumns="False" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" AllowPaging="True" AllowSorting="True" Height="517px" Width="1318px">
+                                            <asp:GridView ID="GridView1" class="table-responsive table table-striped table-hover" runat="server"  AllowPaging="True" AllowSorting="True" Height="517px" Width="1318px" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" AutoGenerateColumns="False" DataKeyNames="id" DataSourceID="TMG">
+                                                <Columns>
+                                                    <asp:BoundField DataField="student_id" HeaderText="student_id" SortExpression="student_id">
+                                                    </asp:BoundField>
+                                                    <asp:BoundField DataField="student_name" HeaderText="student_name" SortExpression="student_name" >
+                                                    </asp:BoundField>
+                                                    <asp:BoundField DataField="position" HeaderText="position" SortExpression="position" >
+                                                    </asp:BoundField>
+                                                    <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" HeaderText="操作" >
+                                                    </asp:CommandField>
+                                                </Columns>
+                                                
                                             </asp:GridView>
                                             
+                                            <asp:LinqDataSource ID="TMG" runat="server" ContextTypeName="DAO.CoordinationDataContext" EnableDelete="True" EnableUpdate="True" EntityTypeName="" TableName="users" Where="mark == @mark">
+                                                <WhereParameters>
+                                                    <asp:SessionParameter Name="mark" SessionField="mark" Type="String" />
+                                                </WhereParameters>
+                                            </asp:LinqDataSource>
+                                            
                                         </div>
-                                    </div><div class="slimScrollBar" style="background: rgb(0, 0, 0); width: 4px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 363.269px;"></div><div class="slimScrollRail" style="width: 4px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+                                    </div>
+                                        <div class="slimScrollBar" style="background: rgb(0, 0, 0); width: 4px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 363.269px;">
+
+                                        </div>
+                                        <div class="slimScrollRail" style="width: 4px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;">
+
+                                        </div>
+
+                                    </div>
                                 </div>
                                 <div id="tab-2" class="tab-pane">
                                     <div class="slimScrollDiv" style="position: relative; width: auto; height: 100%;"><div class="full-height-scroll" style="width: auto; height: 100%;">
                                         <div class="table-responsive">
-                                            <table class="table table-striped table-hover">                     
-                                            </table>
+                                            <asp:GridView ID="GridView2" class="table-responsive table table-striped table-hover" runat="server"  AllowPaging="True" AllowSorting="True" Height="517px" Width="1318px" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" AutoGenerateColumns="False" DataKeyNames="id" DataSourceID="TMG">
+                                                <Columns>
+                                                    <asp:BoundField DataField="student_name" HeaderText="student_name" SortExpression="student_name" />
+                                                    <asp:BoundField DataField="student_id" HeaderText="student_id" SortExpression="student_id" />
+                                                    <asp:BoundField DataField="position" HeaderText="position" SortExpression="position" />
+                                                    <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" HeaderText="操作" />
+                                                </Columns>
+                                                
+                                            </asp:GridView>
+                                            
+                                            <asp:LinqDataSource ID="LinqDataSource1" runat="server" ContextTypeName="DAO.CoordinationDataContext" EnableDelete="True" EnableUpdate="True" EntityTypeName="" TableName="users" Where="mark == @mark">
+                                                <WhereParameters>
+                                                    <asp:SessionParameter Name="mark" SessionField="mark" Type="String" />
+                                                </WhereParameters>
+                                            </asp:LinqDataSource>
+                                            
                                         </div>
-                                    </div><div class="slimScrollBar" style="background: rgb(0, 0, 0); width: 4px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px;"></div><div class="slimScrollRail" style="width: 4px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
-                                </div>
+                                    </div>
+                                        <div class="slimScrollBar" style="background: rgb(0, 0, 0); width: 4px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 363.269px;">
+
+                                        </div>
+                                        <div class="slimScrollRail" style="width: 4px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;">
+
+                                        </div>
+
+                                    </div> </div>
                             </div>
 
                         </div>

@@ -762,7 +762,7 @@ namespace DAO
 		
 		private string _field;
 		
-		private int _complete;
+		private string _complete;
 		
     #region 可扩展性方法定义
     partial void OnLoaded();
@@ -774,7 +774,7 @@ namespace DAO
     partial void OnmarkChanged();
     partial void OnfieldChanging(string value);
     partial void OnfieldChanged();
-    partial void OncompleteChanging(int value);
+    partial void OncompleteChanging(string value);
     partial void OncompleteChanged();
     #endregion
 		
@@ -843,8 +843,8 @@ namespace DAO
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_complete", DbType="Int NOT NULL")]
-		public int complete
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_complete", DbType="VarChar(10) NOT NULL", CanBeNull=false)]
+		public string complete
 		{
 			get
 			{

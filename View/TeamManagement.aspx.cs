@@ -4,13 +4,16 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-
+using Controller;
 namespace test
 {
     public partial class TeamManagement : System.Web.UI.Page
     {
+        TeamOperatingServlet tos = TeamOperatingServlet.TeamOperatingServletInstance();
         protected void Page_Load(object sender, EventArgs e)
         {
+            //测试字段
+            Session["mark"] = "cs123";
 
         }
 
@@ -23,5 +26,6 @@ namespace test
         {
 
         }
+
     }
 }

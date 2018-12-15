@@ -379,8 +379,29 @@
                         </div>
                         <div class="ibox-content">
 
-                            <asp:GridView ID="GridView1" class="footable table table-stripped toggle-arrow-tiny footable-loaded tablet breakpoint" runat="server" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None">
+                            <asp:GridView ID="GridView1" class="footable table table-stripped toggle-arrow-tiny footable-loaded tablet breakpoint" runat="server" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None" AllowPaging="True" AllowSorting="True" DataKeyNames="id" DataSourceID="TUnit" Width="325px">
                                 <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
+                                <Columns>
+                                    <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
+                                    <asp:BoundField DataField="field" HeaderText="field" SortExpression="field" />
+                                    <asp:TemplateField HeaderText="complete" SortExpression="complete">
+                                        <AlternatingItemTemplate>
+                                            <asp:DropDownList ID="DropDownList2" runat="server" AutoPostBack="True" DataSourceID="TUnit" DataTextField="complete" DataValueField="complete">
+                                                <asp:ListItem>未完成</asp:ListItem>
+                                                <asp:ListItem>完成</asp:ListItem>
+                                            </asp:DropDownList>
+                                        </AlternatingItemTemplate>
+                                        <EditItemTemplate>
+                                            <asp:DropDownList ID="DropDownList2" runat="server" AutoPostBack="True" SelectedValue='<%# Bind("complete", "{0}") %>'>
+                                                <asp:ListItem>未完成</asp:ListItem>
+                                                <asp:ListItem>完成</asp:ListItem>
+                                            </asp:DropDownList>
+                                        </EditItemTemplate>
+                                        <ItemTemplate>
+                                            <asp:Label ID="Label1" runat="server" Text='<%# Bind("complete") %>'></asp:Label>
+                                        </ItemTemplate>
+                                    </asp:TemplateField>
+                                </Columns>
                                 <EditRowStyle BackColor="#999999" />
                                 <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
                                 <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
@@ -392,6 +413,12 @@
                                 <SortedDescendingCellStyle BackColor="#FFFDF8" />
                                 <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
                             </asp:GridView>
+
+                            <asp:LinqDataSource ID="TUnit" runat="server" ContextTypeName="DAO.CoordinationDataContext" EnableDelete="True" EnableInsert="True" EnableUpdate="True" EntityTypeName="" OrderBy="id desc" TableName="testform" Where="mark == @mark">
+                                <WhereParameters>
+                                    <asp:SessionParameter Name="mark" SessionField="mark" Type="String" />
+                                </WhereParameters>
+                            </asp:LinqDataSource>
 
                         </div>
                     </div>

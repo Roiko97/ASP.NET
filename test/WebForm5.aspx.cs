@@ -7,14 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace test
 {
-    public partial class TestUnit : System.Web.UI.Page
+    public partial class WebForm5 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //测试字段
-            Session["mark"] = "cs123";
-        }
 
-      
+        }
     }
 }

@@ -10,6 +10,15 @@ namespace Controller
     {
         RandomMark randomMark = RandomMark.getRandomMarkInstance();
         UserDAO userDao = UserDAO.getUserDAOInstance();
+        private static TeamOperatingServlet tos = new TeamOperatingServlet();
+        private TeamOperatingServlet()
+        {
+            ;
+        }
+        public static TeamOperatingServlet TeamOperatingServletInstance()
+        {
+            return tos;
+        }
         /*
          获取Mark,并且进行验证,和保存.
          */
@@ -43,6 +52,9 @@ namespace Controller
             return userDao.updateTeamHeading(mark);
         }
 
-        
+        public Object getMemberInfo(string mark)
+        {
+            return userDao.selectMember(mark);
+        }
     }
 }

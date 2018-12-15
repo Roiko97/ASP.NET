@@ -72,6 +72,30 @@ namespace test
 				return this.GetTable<csByTextBox>();
 			}
 		}
+		
+		public System.Data.Linq.Table<tm2_1> tm2_1
+		{
+			get
+			{
+				return this.GetTable<tm2_1>();
+			}
+		}
+		
+		public System.Data.Linq.Table<tm2_2> tm2_2
+		{
+			get
+			{
+				return this.GetTable<tm2_2>();
+			}
+		}
+		
+		public System.Data.Linq.Table<tm2_3> tm2_3
+		{
+			get
+			{
+				return this.GetTable<tm2_3>();
+			}
+		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.csByTextBox")]
@@ -156,6 +180,141 @@ namespace test
 			if ((this.PropertyChanged != null))
 			{
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.tm2_1")]
+	public partial class tm2_1
+	{
+		
+		private string _name;
+		
+		private System.Nullable<int> _score;
+		
+		public tm2_1()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_name", DbType="VarChar(20)")]
+		public string name
+		{
+			get
+			{
+				return this._name;
+			}
+			set
+			{
+				if ((this._name != value))
+				{
+					this._name = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_score", DbType="Int")]
+		public System.Nullable<int> score
+		{
+			get
+			{
+				return this._score;
+			}
+			set
+			{
+				if ((this._score != value))
+				{
+					this._score = value;
+				}
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.tm2_2")]
+	public partial class tm2_2
+	{
+		
+		private string _name;
+		
+		private System.Nullable<int> _score;
+		
+		public tm2_2()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_name", DbType="VarChar(20)")]
+		public string name
+		{
+			get
+			{
+				return this._name;
+			}
+			set
+			{
+				if ((this._name != value))
+				{
+					this._name = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_score", DbType="Int")]
+		public System.Nullable<int> score
+		{
+			get
+			{
+				return this._score;
+			}
+			set
+			{
+				if ((this._score != value))
+				{
+					this._score = value;
+				}
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.tm2_3")]
+	public partial class tm2_3
+	{
+		
+		private string _name;
+		
+		private System.Nullable<int> _score;
+		
+		public tm2_3()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_name", DbType="VarChar(20)")]
+		public string name
+		{
+			get
+			{
+				return this._name;
+			}
+			set
+			{
+				if ((this._name != value))
+				{
+					this._name = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_score", DbType="Int")]
+		public System.Nullable<int> score
+		{
+			get
+			{
+				return this._score;
+			}
+			set
+			{
+				if ((this._score != value))
+				{
+					this._score = value;
+				}
 			}
 		}
 	}

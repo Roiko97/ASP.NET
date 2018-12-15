@@ -43,9 +43,11 @@ namespace View
         /**/
         protected void cteBtn_Click(object sender, EventArgs e)
         {
-            TeamOperatingServlet ctm = new TeamOperatingServlet();
+            //TeamOperatingServlet ctm = new TeamOperatingServlet();
+            TeamOperatingServlet ctm = TeamOperatingServlet.TeamOperatingServletInstance();
             //获取到mark值
             string mark = ctm.getMark();
+            Session["mark"] = mark;
         }
     }
 }

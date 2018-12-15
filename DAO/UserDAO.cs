@@ -162,7 +162,16 @@ namespace DAO
          */
         public Object selectMember(string mark)
         {
-            var result = db.users.Where(info => info.mark == mark);
+            var result = from u in db.users
+                         where u.mark == mark
+                         select new
+                         {
+                            学号 = u.student_id,
+                            姓名 = u.student_name,
+                            职责 = u.position
+                            
+                         };
+         //   var result = db.users.Where(info => info.mark == mark);
             return result;
         }
         
@@ -230,10 +239,7 @@ namespace DAO
                 {
                     t.field = tf.field;
                 }
-                if (tf.complete != 0)
-                {
-                    t.complete = tf.complete;
-                }
+                t.complete = tf.complete;
                 db.testform.InsertOnSubmit(t);
                 db.SubmitChanges();
                 return true;
