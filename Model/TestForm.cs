@@ -9,6 +9,6 @@ namespace Model
     {
         public string mark { set; get; }
         public string field { set; get; }
-        public int complete { set; get; }
+        public string complete { set; get; }
     }
 }

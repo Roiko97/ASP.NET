@@ -27,8 +27,12 @@
  <div id="wrapper">
         <!--左侧导航开始-->
          <nav class="navbar-default navbar-static-side" role="navigation">
+<<<<<<< HEAD
             <div class="nav-close">
                 <i class="fa fa-times-circle"></i>
+=======
+            <div class="nav-close"><i class="fa fa-times-circle"></i>
+>>>>>>> 290257720829554fd4189531515e80d3e484600a
             </div>
             <div class="sidebar-collapse">
                 <ul class="nav" id="side-menu">
@@ -36,14 +40,22 @@
                         <div class="dropdown profile-element">
                             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                                 <span class="clear">
+<<<<<<< HEAD
                                     <span class="block m-t-xs" style="font-size: 18px;">
+=======
+                                    <span class="block m-t-xs" style="font-size:18px;">
+>>>>>>> 290257720829554fd4189531515e80d3e484600a
                                         <i class="glyphicon glyphicon-th-list"></i>
                                         <strong class="font-bold">软件开发协同系统</strong>
                                     </span>
                                 </span>
                             </a>
                         </div>
+<<<<<<< HEAD
 
+=======
+                        
+>>>>>>> 290257720829554fd4189531515e80d3e484600a
                     </li>
                     <li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
                         <span class="ng-scope">前期准备</span>
@@ -54,6 +66,7 @@
                             <span class="nav-label">主页</span>
                         </a>
                     </li>
+<<<<<<< HEAD
                     
                     <li>
                         
@@ -61,13 +74,24 @@
                                 <i class="glyphicon glyphicon-list-alt "></i>
                                 <span class="nav-label">需求分析</span>
                             </asp:LinkButton>                   
+=======
+                    <li>
+                        <a href="#">
+                            <i class="glyphicon glyphicon-list-alt"></i>
+                            <span class="nav-label">需求分析</span>
+                        </a>
+>>>>>>> 290257720829554fd4189531515e80d3e484600a
                     </li>
                     <li class="line dk"></li>
                     <li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
                         <span class="ng-scope">分类</span>
                     </li>
                     <li>
+<<<<<<< HEAD
                         <a href="mailbox.html"><i class="fa fa-envelope"></i><span class="nav-label">信箱 </span><span class="label label-warning pull-right">16</span></a>
+=======
+                        <a href="mailbox.html"><i class="fa fa-envelope"></i> <span class="nav-label">信箱 </span><span class="label label-warning pull-right">16</span></a>
+>>>>>>> 290257720829554fd4189531515e80d3e484600a
                         <ul class="nav nav-second-level">
                             <li><a class="J_menuItem" href="mailbox.html">收件箱</a>
                             </li>
@@ -78,7 +102,11 @@
                         </ul>
                     </li>
                     <li>
+<<<<<<< HEAD
                         <a href="#"><i class="fa fa-edit"></i><span class="nav-label">表单</span><span class="fa arrow"></span></a>
+=======
+                        <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">表单</span><span class="fa arrow"></span></a>
+>>>>>>> 290257720829554fd4189531515e80d3e484600a
                         <ul class="nav nav-second-level">
                             <li><a class="J_menuItem" href="form_basic.html">基本表单</a>
                             </li>
@@ -115,7 +143,11 @@
                         </ul>
                     </li>
                     <li>
+<<<<<<< HEAD
                         <a href="#"><i class="fa fa-desktop"></i><span class="nav-label">页面</span><span class="fa arrow"></span></a>
+=======
+                        <a href="#"><i class="fa fa-desktop"></i> <span class="nav-label">页面</span><span class="fa arrow"></span></a>
+>>>>>>> 290257720829554fd4189531515e80d3e484600a
                         <ul class="nav nav-second-level">
                             <li><a class="J_menuItem" href="contacts.html">联系人</a>
                             </li>
@@ -208,7 +240,11 @@
                         <span class="ng-scope">分类</span>
                     </li>
                     <li>
+<<<<<<< HEAD
                         <a href="#"><i class="fa fa-flask"></i><span class="nav-label">UI元素</span><span class="fa arrow"></span></a>
+=======
+                        <a href="#"><i class="fa fa-flask"></i> <span class="nav-label">UI元素</span><span class="fa arrow"></span></a>
+>>>>>>> 290257720829554fd4189531515e80d3e484600a
                         <ul class="nav nav-second-level">
                             <li><a class="J_menuItem" href="typography.html">排版</a>
                             </li>
@@ -281,7 +317,11 @@
                         </ul>
                     </li>
                     <li>
+<<<<<<< HEAD
                         <a href="#"><i class="fa fa-table"></i><span class="nav-label">表格</span><span class="fa arrow"></span></a>
+=======
+                        <a href="#"><i class="fa fa-table"></i> <span class="nav-label">表格</span><span class="fa arrow"></span></a>
+>>>>>>> 290257720829554fd4189531515e80d3e484600a
                         <ul class="nav nav-second-level">
                             <li><a class="J_menuItem" href="table_basic.html">基本表格</a>
                             </li>
@@ -301,7 +341,11 @@
                         <span class="ng-scope">分类</span>
                     </li>
                     <li>
+<<<<<<< HEAD
                         <a href="#"><i class="fa fa-picture-o"></i><span class="nav-label">相册</span><span class="fa arrow"></span></a>
+=======
+                        <a href="#"><i class="fa fa-picture-o"></i> <span class="nav-label">相册</span><span class="fa arrow"></span></a>
+>>>>>>> 290257720829554fd4189531515e80d3e484600a
                         <ul class="nav nav-second-level">
                             <li><a class="J_menuItem" href="basic_gallery.html">基本图库</a>
                             </li>
@@ -312,10 +356,17 @@
                         </ul>
                     </li>
                     <li>
+<<<<<<< HEAD
                         <a class="J_menuItem" href="css_animation.html"><i class="fa fa-magic"></i><span class="nav-label">CSS动画</span></a>
                     </li>
                     <li>
                         <a href="#"><i class="fa fa-cutlery"></i><span class="nav-label">工具 </span><span class="fa arrow"></span></a>
+=======
+                        <a class="J_menuItem" href="css_animation.html"><i class="fa fa-magic"></i> <span class="nav-label">CSS动画</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-cutlery"></i> <span class="nav-label">工具 </span><span class="fa arrow"></span></a>
+>>>>>>> 290257720829554fd4189531515e80d3e484600a
                         <ul class="nav nav-second-level">
                             <li><a class="J_menuItem" href="form_builder.html">表单构建器</a>
                             </li>
@@ -382,8 +433,34 @@
                         </div>
                         <div class="ibox-content">
 
+<<<<<<< HEAD
                             <asp:GridView ID="GridView1" class="footable table table-stripped toggle-arrow-tiny footable-loaded tablet breakpoint" runat="server" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None">
                                 <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
+=======
+                            <asp:GridView ID="GridView1" class="footable table table-stripped toggle-arrow-tiny footable-loaded tablet breakpoint" runat="server" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None" AllowPaging="True" AllowSorting="True" DataKeyNames="id" DataSourceID="TUnit" Width="325px">
+                                <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
+                                <Columns>
+                                    <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
+                                    <asp:BoundField DataField="field" HeaderText="field" SortExpression="field" />
+                                    <asp:TemplateField HeaderText="complete" SortExpression="complete">
+                                        <AlternatingItemTemplate>
+                                            <asp:DropDownList ID="DropDownList2" runat="server" AutoPostBack="True" DataSourceID="TUnit" DataTextField="complete" DataValueField="complete">
+                                                <asp:ListItem>未完成</asp:ListItem>
+                                                <asp:ListItem>完成</asp:ListItem>
+                                            </asp:DropDownList>
+                                        </AlternatingItemTemplate>
+                                        <EditItemTemplate>
+                                            <asp:DropDownList ID="DropDownList2" runat="server" AutoPostBack="True" SelectedValue='<%# Bind("complete", "{0}") %>'>
+                                                <asp:ListItem>未完成</asp:ListItem>
+                                                <asp:ListItem>完成</asp:ListItem>
+                                            </asp:DropDownList>
+                                        </EditItemTemplate>
+                                        <ItemTemplate>
+                                            <asp:Label ID="Label1" runat="server" Text='<%# Bind("complete") %>'></asp:Label>
+                                        </ItemTemplate>
+                                    </asp:TemplateField>
+                                </Columns>
+>>>>>>> 290257720829554fd4189531515e80d3e484600a
                                 <EditRowStyle BackColor="#999999" />
                                 <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
                                 <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
@@ -396,6 +473,15 @@
                                 <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
                             </asp:GridView>
 
+<<<<<<< HEAD
+=======
+                            <asp:LinqDataSource ID="TUnit" runat="server" ContextTypeName="DAO.CoordinationDataContext" EnableDelete="True" EnableInsert="True" EnableUpdate="True" EntityTypeName="" OrderBy="id desc" TableName="testform" Where="mark == @mark">
+                                <WhereParameters>
+                                    <asp:SessionParameter Name="mark" SessionField="mark" Type="String" />
+                                </WhereParameters>
+                            </asp:LinqDataSource>
+
+>>>>>>> 290257720829554fd4189531515e80d3e484600a
                         </div>
                     </div>
                 </div>

@@ -26,8 +26,12 @@
  <div id="wrapper">
         <!--左侧导航开始-->
          <nav class="navbar-default navbar-static-side" role="navigation">
+<<<<<<< HEAD
             <div class="nav-close">
                 <i class="fa fa-times-circle"></i>
+=======
+            <div class="nav-close"><i class="fa fa-times-circle"></i>
+>>>>>>> 290257720829554fd4189531515e80d3e484600a
             </div>
             <div class="sidebar-collapse">
                 <ul class="nav" id="side-menu">
@@ -35,14 +39,22 @@
                         <div class="dropdown profile-element">
                             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                                 <span class="clear">
+<<<<<<< HEAD
                                     <span class="block m-t-xs" style="font-size: 18px;">
+=======
+                                    <span class="block m-t-xs" style="font-size:18px;">
+>>>>>>> 290257720829554fd4189531515e80d3e484600a
                                         <i class="glyphicon glyphicon-th-list"></i>
                                         <strong class="font-bold">软件开发协同系统</strong>
                                     </span>
                                 </span>
                             </a>
                         </div>
+<<<<<<< HEAD
 
+=======
+                        
+>>>>>>> 290257720829554fd4189531515e80d3e484600a
                     </li>
                     <li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
                         <span class="ng-scope">前期准备</span>
@@ -53,6 +65,7 @@
                             <span class="nav-label">主页</span>
                         </a>
                     </li>
+<<<<<<< HEAD
                     
                     <li>
                         
@@ -60,13 +73,24 @@
                                 <i class="glyphicon glyphicon-list-alt "></i>
                                 <span class="nav-label">需求分析</span>
                             </asp:LinkButton>                   
+=======
+                    <li>
+                        <a href="#">
+                            <i class="glyphicon glyphicon-list-alt"></i>
+                            <span class="nav-label">需求分析</span>
+                        </a>
+>>>>>>> 290257720829554fd4189531515e80d3e484600a
                     </li>
                     <li class="line dk"></li>
                     <li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
                         <span class="ng-scope">分类</span>
                     </li>
                     <li>
+<<<<<<< HEAD
                         <a href="mailbox.html"><i class="fa fa-envelope"></i><span class="nav-label">信箱 </span><span class="label label-warning pull-right">16</span></a>
+=======
+                        <a href="mailbox.html"><i class="fa fa-envelope"></i> <span class="nav-label">信箱 </span><span class="label label-warning pull-right">16</span></a>
+>>>>>>> 290257720829554fd4189531515e80d3e484600a
                         <ul class="nav nav-second-level">
                             <li><a class="J_menuItem" href="mailbox.html">收件箱</a>
                             </li>
@@ -77,7 +101,11 @@
                         </ul>
                     </li>
                     <li>
+<<<<<<< HEAD
                         <a href="#"><i class="fa fa-edit"></i><span class="nav-label">表单</span><span class="fa arrow"></span></a>
+=======
+                        <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">表单</span><span class="fa arrow"></span></a>
+>>>>>>> 290257720829554fd4189531515e80d3e484600a
                         <ul class="nav nav-second-level">
                             <li><a class="J_menuItem" href="form_basic.html">基本表单</a>
                             </li>
@@ -114,7 +142,11 @@
                         </ul>
                     </li>
                     <li>
+<<<<<<< HEAD
                         <a href="#"><i class="fa fa-desktop"></i><span class="nav-label">页面</span><span class="fa arrow"></span></a>
+=======
+                        <a href="#"><i class="fa fa-desktop"></i> <span class="nav-label">页面</span><span class="fa arrow"></span></a>
+>>>>>>> 290257720829554fd4189531515e80d3e484600a
                         <ul class="nav nav-second-level">
                             <li><a class="J_menuItem" href="contacts.html">联系人</a>
                             </li>
@@ -207,7 +239,11 @@
                         <span class="ng-scope">分类</span>
                     </li>
                     <li>
+<<<<<<< HEAD
                         <a href="#"><i class="fa fa-flask"></i><span class="nav-label">UI元素</span><span class="fa arrow"></span></a>
+=======
+                        <a href="#"><i class="fa fa-flask"></i> <span class="nav-label">UI元素</span><span class="fa arrow"></span></a>
+>>>>>>> 290257720829554fd4189531515e80d3e484600a
                         <ul class="nav nav-second-level">
                             <li><a class="J_menuItem" href="typography.html">排版</a>
                             </li>
@@ -280,7 +316,11 @@
                         </ul>
                     </li>
                     <li>
+<<<<<<< HEAD
                         <a href="#"><i class="fa fa-table"></i><span class="nav-label">表格</span><span class="fa arrow"></span></a>
+=======
+                        <a href="#"><i class="fa fa-table"></i> <span class="nav-label">表格</span><span class="fa arrow"></span></a>
+>>>>>>> 290257720829554fd4189531515e80d3e484600a
                         <ul class="nav nav-second-level">
                             <li><a class="J_menuItem" href="table_basic.html">基本表格</a>
                             </li>
@@ -300,7 +340,11 @@
                         <span class="ng-scope">分类</span>
                     </li>
                     <li>
+<<<<<<< HEAD
                         <a href="#"><i class="fa fa-picture-o"></i><span class="nav-label">相册</span><span class="fa arrow"></span></a>
+=======
+                        <a href="#"><i class="fa fa-picture-o"></i> <span class="nav-label">相册</span><span class="fa arrow"></span></a>
+>>>>>>> 290257720829554fd4189531515e80d3e484600a
                         <ul class="nav nav-second-level">
                             <li><a class="J_menuItem" href="basic_gallery.html">基本图库</a>
                             </li>
@@ -311,10 +355,17 @@
                         </ul>
                     </li>
                     <li>
+<<<<<<< HEAD
                         <a class="J_menuItem" href="css_animation.html"><i class="fa fa-magic"></i><span class="nav-label">CSS动画</span></a>
                     </li>
                     <li>
                         <a href="#"><i class="fa fa-cutlery"></i><span class="nav-label">工具 </span><span class="fa arrow"></span></a>
+=======
+                        <a class="J_menuItem" href="css_animation.html"><i class="fa fa-magic"></i> <span class="nav-label">CSS动画</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-cutlery"></i> <span class="nav-label">工具 </span><span class="fa arrow"></span></a>
+>>>>>>> 290257720829554fd4189531515e80d3e484600a
                         <ul class="nav nav-second-level">
                             <li><a class="J_menuItem" href="form_builder.html">表单构建器</a>
                             </li>
@@ -376,6 +427,7 @@
           <div class="col-sm-12">
                 <div class="ibox">
                     <div class="ibox-content">
+<<<<<<< HEAD
 
                         <span class="text-muted small pull-right">最后更新：<i class="fa fa-clock-o"></i> 2015-09-01 12:00</span>
                          <div class="row J_mainContent" id="content-main">
@@ -440,6 +492,10 @@
 
                         <h2>客户管理</h2>
 
+=======
+                        <span class="text-muted small pull-right">最后更新：<i class="fa fa-clock-o"></i> 2015-09-01 12:00</span>
+                        <h2>客户管理</h2>
+>>>>>>> 290257720829554fd4189531515e80d3e484600a
                         <p>
                             所有客户必须通过邮件验证
                         </p>
@@ -459,6 +515,7 @@
                             </ul>
                             <div class="tab-content">
                                 <div id="tab-1" class="tab-pane active">
+<<<<<<< HEAD
                                     <div class="slimScrollDiv" style="position: relative; width: auto; height: 100%;"><div class="full-height-scroll" style="width: auto; height: 100%;">
                                         <div class="table-responsive">
                                             <asp:GridView ID="GridView1" class="table-responsive table table-striped table-hover" runat="server" AutoGenerateColumns="False" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" AllowPaging="True" AllowSorting="True" Height="517px" Width="1318px">
@@ -466,15 +523,79 @@
                                             
                                         </div>
                                     </div><div class="slimScrollBar" style="background: rgb(0, 0, 0); width: 4px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 363.269px;"></div><div class="slimScrollRail" style="width: 4px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+=======
+                                    <div class="slimScrollDiv" style="position: relative; width: auto; height: auto;">
+                                        <div class="full-height-scroll" style="width: auto; height: auto;">
+                                        <div class="table-responsive">
+                                            <asp:GridView ID="GridView1" class="table-responsive table table-striped table-hover" runat="server"  AllowPaging="True" AllowSorting="True" Height="517px" Width="1318px" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" AutoGenerateColumns="False" DataKeyNames="id" DataSourceID="TMG">
+                                                <Columns>
+                                                    <asp:BoundField DataField="student_id" HeaderText="student_id" SortExpression="student_id">
+                                                    </asp:BoundField>
+                                                    <asp:BoundField DataField="student_name" HeaderText="student_name" SortExpression="student_name" >
+                                                    </asp:BoundField>
+                                                    <asp:BoundField DataField="position" HeaderText="position" SortExpression="position" >
+                                                    </asp:BoundField>
+                                                    <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" HeaderText="操作" >
+                                                    </asp:CommandField>
+                                                </Columns>
+                                                
+                                            </asp:GridView>
+                                            
+                                            <asp:LinqDataSource ID="TMG" runat="server" ContextTypeName="DAO.CoordinationDataContext" EnableDelete="True" EnableUpdate="True" EntityTypeName="" TableName="users" Where="mark == @mark">
+                                                <WhereParameters>
+                                                    <asp:SessionParameter Name="mark" SessionField="mark" Type="String" />
+                                                </WhereParameters>
+                                            </asp:LinqDataSource>
+                                            
+                                        </div>
+                                    </div>
+                                        <div class="slimScrollBar" style="background: rgb(0, 0, 0); width: 4px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 363.269px;">
+
+                                        </div>
+                                        <div class="slimScrollRail" style="width: 4px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;">
+
+                                        </div>
+
+                                    </div>
+>>>>>>> 290257720829554fd4189531515e80d3e484600a
                                 </div>
                                 <div id="tab-2" class="tab-pane">
                                     <div class="slimScrollDiv" style="position: relative; width: auto; height: 100%;"><div class="full-height-scroll" style="width: auto; height: 100%;">
                                         <div class="table-responsive">
+<<<<<<< HEAD
                                             <table class="table table-striped table-hover">                     
                                             </table>
                                         </div>
                                     </div><div class="slimScrollBar" style="background: rgb(0, 0, 0); width: 4px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px;"></div><div class="slimScrollRail" style="width: 4px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
                                 </div>
+=======
+                                            <asp:GridView ID="GridView2" class="table-responsive table table-striped table-hover" runat="server"  AllowPaging="True" AllowSorting="True" Height="517px" Width="1318px" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" AutoGenerateColumns="False" DataKeyNames="id" DataSourceID="TMG">
+                                                <Columns>
+                                                    <asp:BoundField DataField="student_name" HeaderText="student_name" SortExpression="student_name" />
+                                                    <asp:BoundField DataField="student_id" HeaderText="student_id" SortExpression="student_id" />
+                                                    <asp:BoundField DataField="position" HeaderText="position" SortExpression="position" />
+                                                    <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" HeaderText="操作" />
+                                                </Columns>
+                                                
+                                            </asp:GridView>
+                                            
+                                            <asp:LinqDataSource ID="LinqDataSource1" runat="server" ContextTypeName="DAO.CoordinationDataContext" EnableDelete="True" EnableUpdate="True" EntityTypeName="" TableName="users" Where="mark == @mark">
+                                                <WhereParameters>
+                                                    <asp:SessionParameter Name="mark" SessionField="mark" Type="String" />
+                                                </WhereParameters>
+                                            </asp:LinqDataSource>
+                                            
+                                        </div>
+                                    </div>
+                                        <div class="slimScrollBar" style="background: rgb(0, 0, 0); width: 4px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 363.269px;">
+
+                                        </div>
+                                        <div class="slimScrollRail" style="width: 4px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;">
+
+                                        </div>
+
+                                    </div> </div>
+>>>>>>> 290257720829554fd4189531515e80d3e484600a
                             </div>
 
                         </div>

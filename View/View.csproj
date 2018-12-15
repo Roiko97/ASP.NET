@@ -207,6 +207,7 @@
     <Compile Include="TestUnit.aspx.designer.cs">
       <DependentUpon>TestUnit.aspx</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="View.aspx.cs">
       <DependentUpon>View.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -214,6 +215,8 @@
     <Compile Include="View.aspx.designer.cs">
       <DependentUpon>View.aspx</DependentUpon>
     </Compile>
+=======
+>>>>>>> 290257720829554fd4189531515e80d3e484600a
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\fontawesome-webfont.eot" />

@@ -26,10 +26,10 @@
         <elementListCompartment Id="53a178df-04a8-4190-ae34-7f866470df0c" absoluteBounds="3.765, 5.21, 1.9700000000000002, 0.97730509440104174" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="a727a943-3013-41e9-bb8f-ebf3df87946a" absoluteBounds="6.75, 0.75, 2, 1.5373050944010416">
+    <classShape Id="646ae090-e369-4300-82e2-e578cdb3a81c" absoluteBounds="8.125, 2.25, 2, 1.5373050944010416">
       <DataClassMoniker Name="/CoordinationDataContext/testform" />
       <nestedChildShapes>
-        <elementListCompartment Id="f6787bf9-b8f6-4e5d-a6ba-55e7d74c3835" absoluteBounds="6.765, 1.21, 1.9700000000000002, 0.97730509440104174" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="fd0ac98c-33ed-4ce7-a7af-ffc40ae1664f" absoluteBounds="8.14, 2.71, 1.9700000000000002, 0.97730509440104174" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
   </nestedChildShapes>

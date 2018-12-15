@@ -6,4 +6,22 @@
       <Column Name="data" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
     </Type>
   </Table>
+  <Table Name="dbo.tm2_1" Member="tm2_1">
+    <Type Name="tm2_1">
+      <Column Name="name" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="score" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tm2_2" Member="tm2_2">
+    <Type Name="tm2_2">
+      <Column Name="name" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="score" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tm2_3" Member="tm2_3">
+    <Type Name="tm2_3">
+      <Column Name="name" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="score" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
 </Database>
