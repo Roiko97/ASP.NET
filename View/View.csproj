@@ -61,6 +61,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Communicate.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-reboot.css" />
@@ -112,6 +113,8 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="UpdateCdt.aspx" />
+    <Content Include="TeamManagement.aspx" />
+    <Content Include="TestUnit.aspx" />
     <None Include="Scripts\jquery-3.0.0.intellisense.js" />
     <Content Include="Scripts\index.d.ts" />
     <Content Include="Scripts\jquery-3.0.0.js" />
@@ -128,9 +131,17 @@
     <Content Include="Scripts\umd\popper.min.js" />
     <Content Include="src\LOGO1.gif" />
     <Content Include="Summarize.aspx" />
+    <Content Include="View.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Communicate.aspx.cs">
+      <DependentUpon>Communicate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Communicate.aspx.designer.cs">
+      <DependentUpon>Communicate.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Coordination.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -181,6 +192,27 @@
     </Compile>
     <Compile Include="UpdateCdt.aspx.designer.cs">
       <DependentUpon>UpdateCdt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TeamManagement.aspx.cs">
+      <DependentUpon>TeamManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TeamManagement.aspx.designer.cs">
+      <DependentUpon>TeamManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TestUnit.aspx.cs">
+      <DependentUpon>TestUnit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestUnit.aspx.designer.cs">
+      <DependentUpon>TestUnit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View.aspx.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View.aspx.designer.cs">
+      <DependentUpon>View.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

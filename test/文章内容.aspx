@@ -457,7 +457,7 @@
                     </div>
                 </nav>
                 <div>
-                     <div class="row" style="margin-top:3%;margin-left:2%">
+                     <div class="row" style="margin-top:3%;margin-left:1%">
                         <div class="col-md-10 col-md-offset-1">
                             <div class="jumbotron">
                                 <h2>需求分析</h2>
@@ -466,7 +466,7 @@
                             </div>
                         </div>
                     </div>
-                    <form id="form1" runat="server"  style="margin-top:0.5%; margin-left:20%;">
+                    <form id="form1" runat="server"  style="margin-top:0.5%; margin-left:10%;">
                         <h1>文档内容：</h1>
                         <p style="line-height: 2; width: 60%">
                         <asp:TextBox style="height: 300px" ID="txtEditorContents" name="txtEditorContents" runat="server" TextMode="MultiLine" Height="400px" Width="1000px" ClientIDMode="Static">

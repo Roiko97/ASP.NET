@@ -68,7 +68,11 @@
     </Content>
     <Content Include="packages.config" />
     <Content Include="WebForm4.aspx" />
+    <Content Include="成员管理.aspx" />
     <Content Include="文章内容.aspx" />
+    <Content Include="框架测试.aspx" />
+    <Content Include="测试.aspx" />
+    <Content Include="设计模式.aspx" />
     <Content Include="需求分析.aspx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -110,12 +114,40 @@
     <Compile Include="WebForm4.aspx.designer.cs">
       <DependentUpon>WebForm4.aspx</DependentUpon>
     </Compile>
+    <Compile Include="成员管理.aspx.cs">
+      <DependentUpon>成员管理.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="成员管理.aspx.designer.cs">
+      <DependentUpon>成员管理.aspx</DependentUpon>
+    </Compile>
     <Compile Include="文章内容.aspx.cs">
       <DependentUpon>文章内容.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="文章内容.aspx.designer.cs">
       <DependentUpon>文章内容.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="框架测试.aspx.cs">
+      <DependentUpon>框架测试.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="框架测试.aspx.designer.cs">
+      <DependentUpon>框架测试.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="测试.aspx.cs">
+      <DependentUpon>测试.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="测试.aspx.designer.cs">
+      <DependentUpon>测试.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="设计模式.aspx.cs">
+      <DependentUpon>设计模式.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="设计模式.aspx.designer.cs">
+      <DependentUpon>设计模式.aspx</DependentUpon>
     </Compile>
     <Compile Include="需求分析.aspx.cs">
       <DependentUpon>需求分析.aspx</DependentUpon>

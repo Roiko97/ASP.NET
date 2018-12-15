@@ -171,11 +171,13 @@
                             <span class="nav-label">主页</span>
                         </a>
                     </li>
+                    
                     <li>
-                        <a href="#">
-                            <i class="glyphicon glyphicon-list-alt"></i>
-                            <span class="nav-label">需求分析</span>
-                        </a>
+                        
+                            <asp:LinkButton ID="LinkButton1" runat="server" OnClick="Demand_Click">
+                                <i class="glyphicon glyphicon-list-alt "></i>
+                                <span class="nav-label">需求分析</span>
+                            </asp:LinkButton>                   
                     </li>
                     <li class="line dk"></li>
                     <li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
@@ -517,6 +519,10 @@
                             </div>
 
                             <asp:Button ID="updateCom" runat="server"  class="btn btn-primary btn-lg" Text="修改">
+                              <%--  <i class="btn btn-primary btn-lg" role="button"></i>--%>
+ 
+                            </asp:Button>
+                            <asp:Button ID="download" runat="server"  class="btn btn-primary btn-lg" Text="下载">
                               <%--  <i class="btn btn-primary btn-lg" role="button"></i>--%>
  
                             </asp:Button>

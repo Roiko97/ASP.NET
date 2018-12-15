@@ -148,7 +148,8 @@
  <div id="wrapper">
         <!--左侧导航开始-->
          <nav class="navbar-default navbar-static-side" role="navigation">
-            <div class="nav-close"><i class="fa fa-times-circle"></i>
+            <div class="nav-close">
+                <i class="fa fa-times-circle"></i>
             </div>
             <div class="sidebar-collapse">
                 <ul class="nav" id="side-menu">
@@ -156,14 +157,14 @@
                         <div class="dropdown profile-element">
                             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                                 <span class="clear">
-                                    <span class="block m-t-xs" style="font-size:18px;">
+                                    <span class="block m-t-xs" style="font-size: 18px;">
                                         <i class="glyphicon glyphicon-th-list"></i>
                                         <strong class="font-bold">软件开发协同系统</strong>
                                     </span>
                                 </span>
                             </a>
                         </div>
-                        
+
                     </li>
                     <li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
                         <span class="ng-scope">前期准备</span>
@@ -174,18 +175,20 @@
                             <span class="nav-label">主页</span>
                         </a>
                     </li>
+                    
                     <li>
-                        <a href="#">
-                            <i class="glyphicon glyphicon-list-alt"></i>
-                            <span class="nav-label">需求分析</span>
-                        </a>
+                        
+                            <asp:LinkButton ID="LinkButton1" runat="server" OnClick="Demand_Click">
+                                <i class="glyphicon glyphicon-list-alt "></i>
+                                <span class="nav-label">需求分析</span>
+                            </asp:LinkButton>                   
                     </li>
                     <li class="line dk"></li>
                     <li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
                         <span class="ng-scope">分类</span>
                     </li>
                     <li>
-                        <a href="mailbox.html"><i class="fa fa-envelope"></i> <span class="nav-label">信箱文本 </span><span class="label label-warning pull-right">16</span></a>
+                        <a href="mailbox.html"><i class="fa fa-envelope"></i><span class="nav-label">信箱 </span><span class="label label-warning pull-right">16</span></a>
                         <ul class="nav nav-second-level">
                             <li><a class="J_menuItem" href="mailbox.html">收件箱</a>
                             </li>
@@ -196,7 +199,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">表单</span><span class="fa arrow"></span></a>
+                        <a href="#"><i class="fa fa-edit"></i><span class="nav-label">表单</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li><a class="J_menuItem" href="form_basic.html">基本表单</a>
                             </li>
@@ -233,7 +236,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-desktop"></i> <span class="nav-label">页面</span><span class="fa arrow"></span></a>
+                        <a href="#"><i class="fa fa-desktop"></i><span class="nav-label">页面</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li><a class="J_menuItem" href="contacts.html">联系人</a>
                             </li>
@@ -326,7 +329,7 @@
                         <span class="ng-scope">分类</span>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-flask"></i> <span class="nav-label">UI元素</span><span class="fa arrow"></span></a>
+                        <a href="#"><i class="fa fa-flask"></i><span class="nav-label">UI元素</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li><a class="J_menuItem" href="typography.html">排版</a>
                             </li>
@@ -399,7 +402,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-table"></i> <span class="nav-label">表格</span><span class="fa arrow"></span></a>
+                        <a href="#"><i class="fa fa-table"></i><span class="nav-label">表格</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li><a class="J_menuItem" href="table_basic.html">基本表格</a>
                             </li>
@@ -419,7 +422,7 @@
                         <span class="ng-scope">分类</span>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-picture-o"></i> <span class="nav-label">相册</span><span class="fa arrow"></span></a>
+                        <a href="#"><i class="fa fa-picture-o"></i><span class="nav-label">相册</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li><a class="J_menuItem" href="basic_gallery.html">基本图库</a>
                             </li>
@@ -430,10 +433,10 @@
                         </ul>
                     </li>
                     <li>
-                        <a class="J_menuItem" href="css_animation.html"><i class="fa fa-magic"></i> <span class="nav-label">CSS动画</span></a>
+                        <a class="J_menuItem" href="css_animation.html"><i class="fa fa-magic"></i><span class="nav-label">CSS动画</span></a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-cutlery"></i> <span class="nav-label">工具 </span><span class="fa arrow"></span></a>
+                        <a href="#"><i class="fa fa-cutlery"></i><span class="nav-label">工具 </span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li><a class="J_menuItem" href="form_builder.html">表单构建器</a>
                             </li>

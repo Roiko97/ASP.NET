@@ -10,3 +10,15 @@ C:\Users\jung\Documents\Visual Studio 2013\Projects\面向大学生基于软件�
 C:\Users\jung\Documents\Visual Studio 2013\Projects\面向大学生基于软件工程思维协同开发系统\Controller\obj\Debug\Controller.csprojResolveAssemblyReference.cache
 C:\Users\jung\Documents\Visual Studio 2013\Projects\面向大学生基于软件工程思维协同开发系统\Controller\obj\Debug\Controller.dll
 C:\Users\jung\Documents\Visual Studio 2013\Projects\面向大学生基于软件工程思维协同开发系统\Controller\obj\Debug\Controller.pdb
+C:\Users\DELL\Desktop\ASP.NET\ASP.NET-master\Controller\bin\Controller.dll.config
+C:\Users\DELL\Desktop\ASP.NET\ASP.NET-master\Controller\bin\Controller.dll
+C:\Users\DELL\Desktop\ASP.NET\ASP.NET-master\Controller\bin\Controller.pdb
+C:\Users\DELL\Desktop\ASP.NET\ASP.NET-master\Controller\bin\DAO.dll
+C:\Users\DELL\Desktop\ASP.NET\ASP.NET-master\Controller\bin\Model.dll
+C:\Users\DELL\Desktop\ASP.NET\ASP.NET-master\Controller\bin\Newtonsoft.Json.dll
+C:\Users\DELL\Desktop\ASP.NET\ASP.NET-master\Controller\bin\DAO.pdb
+C:\Users\DELL\Desktop\ASP.NET\ASP.NET-master\Controller\bin\Model.pdb
+C:\Users\DELL\Desktop\ASP.NET\ASP.NET-master\Controller\bin\Newtonsoft.Json.xml
+C:\Users\DELL\Desktop\ASP.NET\ASP.NET-master\Controller\obj\Debug\Controller.csprojResolveAssemblyReference.cache
+C:\Users\DELL\Desktop\ASP.NET\ASP.NET-master\Controller\obj\Debug\Controller.dll
+C:\Users\DELL\Desktop\ASP.NET\ASP.NET-master\Controller\obj\Debug\Controller.pdb
